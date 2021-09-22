@@ -63,7 +63,7 @@ echo -e "$green    Installing Gems ... $reset "
 cd metasploit-framework/
 gem install bundler
 gem install nokogiri -v 1.8.0 -- --use-system-libraries
-#gem install nokogiri -v 1.12.4 -- --use-system-libraries
+gem install nokogiri -v 1.12.4 -- --use-system-libraries
 gem install actionpack
 bundle update activesupport
 bundle update --bundler
