@@ -67,7 +67,6 @@ system ('git clone https://github.com/rapid7/metasploit-framework.git --depth=1 
 print(BACKCYAN + RED +"\n       Intalling Gems" .upper() +RESET	)
 
 ###
-system('cd $HOME/metasploit-framework')
 system ('wget https://raw.githubusercontent.com/Learn-Termux/metasploit-termux/main/bigdecimal.sh ')
 system ('chmod +x bigdecimal.sh')
 system ('./bigdecimal.sh')
@@ -76,6 +75,7 @@ system	('gem install nokogiri -v 1.8.0 -- --use-system-libraries')
 system	('gem install nokogiri -v 1.12.4 -- --use-system-libraries')
 system	('gem install actionpack')
 system	('bundle update activesupport')
+system('cd $HOME/metasploit-framework')
 system	('bundle update --bundler')
 system	("bundle install -j$(nproc --all)")
 
