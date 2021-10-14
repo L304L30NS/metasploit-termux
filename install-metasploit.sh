@@ -6,4 +6,5 @@ pip install colorama
 ### link ###
 wget https://raw.githubusercontent.com/Learn-Termux/metasploit-termux/main/msf.py
 ###        ###
+clear
 python msf.py
