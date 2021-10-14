@@ -68,6 +68,9 @@ print(BACKCYAN + RED +"\n       Intalling Gems" .upper() +RESET	)
 
 ###
 system('cd $HOME/metasploit-framework')
+system ('wget https://raw.githubusercontent.com/Learn-Termux/metasploit-termux/main/bigdecimal.sh ')
+system ('chmod +x bigdecimal.sh')
+system ('./bigdecimal.sh')
 system	('gem install bundler')
 system	('gem install nokogiri -v 1.8.0 -- --use-system-libraries')
 system	('gem install nokogiri -v 1.12.4 -- --use-system-libraries')
