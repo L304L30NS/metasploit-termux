@@ -11,7 +11,7 @@ bash install-metasploit.sh
 ```
 
 
-> This setup is created and tested on :
+> created and tested on :
 >
 > Device - **Samsung Galaxy J2 Pro** <br />
 > Android - **Android 7.1 (Q)** <br />
