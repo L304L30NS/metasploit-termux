@@ -26,7 +26,7 @@ rm -rf $PREFIX/lib/ruby/
 > created and tested on :
 >
 > Device - **Samsung Galaxy J2 Pro** <br />
-> Android - **Android 7.1 ** <br />
+> Android - **Android 7.1** <br />
 > CPU Type - **arm**
 
 <br/>
