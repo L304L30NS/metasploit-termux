@@ -77,7 +77,7 @@ system  ('bundle config build.nokogiri --use-system-libraries ')
 system	('gem install bundler')
 system  (" sed '/rbnacl/d' -i Gemfile.lock ")
 system  (" sed '/rbnacl/d' -i metasploit-framework.gemspec "
-system  (" sed 's|nokogiri (1.*)|nokogiri (1.8.0)|g' -i Gemfile.lock ")
+system  (" sed 's|nokogiri (1.*)|nokogiri (1.12.5)|g' -i Gemfile.lock ")
 system	('gem install nokogiri -v 1.12.5 -- --use-system-libraries')
 system	('gem install actionpack')
 system	('bundle update activesupport')
