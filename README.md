@@ -26,4 +26,12 @@ bash install-metasploit.sh
 ![Screenshot](https://raw.githubusercontent.com/Learn-Termux/Img/main/Screenshot_20211014-190808.jpg)
 
 ![Screenshot](https://raw.githubusercontent.com/Learn-Termux/Img/main/Screenshot_20211014-190708.jpg)
+<br />
+## Uninstalllination :
+For Uninstall 
+```
+apt purge ruby
+rm -rf $HOME/metasploit-framework
+rm -rf $PREFIX/lib/ruby/
 
+```
