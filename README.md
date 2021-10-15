@@ -12,11 +12,13 @@ bash install-metasploit.sh
 <br/>
 ## Uninstalllination :
 For Uninstall 
+
 ```
 apt purge ruby
 rm -rf $HOME/metasploit-framework
 rm -rf $PREFIX/lib/ruby/
 ```
+
 <br />
 
 > created and tested on :
