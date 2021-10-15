@@ -9,7 +9,7 @@ pkg install -y wget
 wget https://raw.githubusercontent.com/Learn-Termux/metasploit-termux/main/install-metasploit.sh
 bash install-metasploit.sh
 ```
-
+<br/>
 
 > created and tested on :
 >
@@ -17,7 +17,7 @@ bash install-metasploit.sh
 > Android - **Android 7.1 (Q)** <br />
 > CPU Type - **arm**
 
-
+<br/>
 ## Screenshots :
 ![Screenshot](https://raw.githubusercontent.com/Learn-Termux/Img/main/Screenshot_20211014-190808.jpg)
 #
