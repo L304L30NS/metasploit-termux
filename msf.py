@@ -83,7 +83,7 @@ system	('gem install actionpack')
 system	('bundle update activesupport')
 system	('bundle update --bundler')
 system	("bundle install -j$(nproc --all)")
-
+ 
 
 print(BACKBLUE	+ "     creating symoblic link    ".upper())
 system	('ln -s $HOME/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/')
