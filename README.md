@@ -40,3 +40,10 @@ rm -rf $PREFIX/lib/ruby/
 ![Screenshot](https://raw.githubusercontent.com/Learn-Termux/Img/main/Screenshot_20211014-190708.jpg)
 <br />
 
+### Issues
+
+If you encounter any issues post @
+
+https://github.com/Learn-Termux/metasploit-termux/issues/new/choose
+
+
