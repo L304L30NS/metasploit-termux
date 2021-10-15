@@ -62,20 +62,23 @@ system(DEPENDENCIES)
 
 print(BACKGREEN  +"\n     CLONING METASPLOIT-FRAMEWORK FOLDER  " +RESET)
 sleep(2)
-system('cd $HOME')
-system ('git clone https://github.com/rapid7/metasploit-framework.git --depth=1 ')
+system  ('cd $HOME')
+system  ('git clone https://github.com/rapid7/metasploit-framework.git --depth=1 ')
  
 print(BACKCYAN + RED +"\n       Intalling Gems" .upper() +RESET	)
 
 ###
-system ('wget https://raw.githubusercontent.com/Learn-Termux/metasploit-termux/main/bigdecimal.sh ')
-system ('chmod +x bigdecimal.sh')
-system ('./bigdecimal.sh')
+system  ('wget https://raw.githubusercontent.com/Learn-Termux/metasploit-termux/main/bigdecimal.sh ')
+system  ('chmod +x bigdecimal.sh')
+system  ('./bigdecimal.sh')
 os.chdir("metasploit-framework") 
 system  ('gem install --no-document --verbose bundler:2.2.11 ')
 system  ('bundle config build.nokogiri --use-system-libraries ')
 system	('gem install bundler')
-#system	('gem install nokogiri -- --use-system-libraries')
+system  (" sed '/rbnacl/d' -i Gemfile.lock ")
+system  (" sed '/rbnacl/d' -i metasploit-framework.gemspec "
+system  (" sed 's|nokogiri (1.*)|nokogiri (1.8.0)|g' -i Gemfile.lock ")
+system	('gem install nokogiri -v 1.12.5 -- --use-system-libraries')
 system	('gem install actionpack')
 system	('bundle update activesupport')
 system	('bundle update --bundler')
@@ -88,7 +91,7 @@ system	('ln -s $HOME/metasploit-framework/msfvenom /data/data/com.termux/files/u
 
 
 print( BACKGREEN + "     creating database  ".upper())
-system ('wget https://raw.githubusercontent.com/Learn-Termux/termux-metasploit/main/database.yml -O $HOME/metasploit-framework/config/database.yml')
+system  ('wget https://raw.githubusercontent.com/Learn-Termux/termux-metasploit/main/database.yml -O $HOME/metasploit-framework/config/database.yml')
 system	('wget https://raw.githubusercontent.com/Learn-Termux/metasploit-termux/main/pg_ctl.sh -O $HOME/pg_ctl.sh')
 system	('mkdir -p $PREFIX/var/lib/postgresql')
 system	('initdb $PREFIX/var/lib/postgresql')
