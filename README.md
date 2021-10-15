@@ -10,7 +10,9 @@ wget https://raw.githubusercontent.com/Learn-Termux/metasploit-termux/main/insta
 bash install-metasploit.sh
 ```
 <br/>
+
 ## Uninstalllination :
+
 For Uninstall 
 
 ```
@@ -24,7 +26,7 @@ rm -rf $PREFIX/lib/ruby/
 > created and tested on :
 >
 > Device - **Samsung Galaxy J2 Pro** <br />
-> Android - **Android 7.1 (Q)** <br />
+> Android - **Android 7.1 ** <br />
 > CPU Type - **arm**
 
 <br/>
