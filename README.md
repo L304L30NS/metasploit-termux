@@ -11,9 +11,9 @@ bash install-metasploit.sh
 ```
 <br/>
 
-## Uninstalllination :
 
-For Uninstall 
+
+## For Uninstall :
 
 ```
 apt purge ruby
